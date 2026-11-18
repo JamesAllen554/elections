@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>elections</title>
+<title>North Carolina 2026 Election Analysis – elections</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -100,6 +100,10 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./election-night-2026/article.html"> 
+<span class="menu-text">Election Graphics</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
@@ -114,15 +118,28 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#county-level-swing" id="toc-county-level-swing" class="nav-link" data-scroll-target="#county-level-swing">County-Level Swing</a></li>
+  <li><a href="#legislative-district-results" id="toc-legislative-district-results" class="nav-link" data-scroll-target="#legislative-district-results">Legislative District Results</a>
+  <ul class="collapse">
+  <li><a href="#nc-house-districts" id="toc-nc-house-districts" class="nav-link" data-scroll-target="#nc-house-districts">NC House Districts</a></li>
+  <li><a href="#nc-senate-districts" id="toc-nc-senate-districts" class="nav-link" data-scroll-target="#nc-senate-districts">NC Senate Districts</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">elections</h1>
+<h1 class="title">North Carolina 2026 Election Analysis</h1>
+<p class="subtitle lead">Data and Maps from NCFREE’s Election Night Breakdown</p>
 </div>
 
 
@@ -139,10 +156,49 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>Following the November 2026 elections, the <strong>North Carolina FreeEnterprise Foundation (NCFREE)</strong> compiled unofficial precinct and county returns from the NC State Board of Elections.</p>
+<p>At the top of the ticket, Roy Cooper won the U.S. Senate race by 19.6 points, marking a <strong>22.8-point swing toward Democrats</strong> compared to the 2024 presidential results.</p>
+</section>
+<section id="county-level-swing" class="level2">
+<h2 class="anchored" data-anchor-id="county-level-swing">County-Level Swing</h2>
+<p>Every single county in North Carolina swung toward Democrats, with the most pronounced movements occurring in western mountain counties and suburban counties south of Raleigh.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="election-night-2026/images/ncfree-election-2026-07-county-swing-to-cooper-map.jpg" class="img-fluid figure-img"></p>
+<figcaption>County Swing to Cooper compared to 2024 presidential race</figcaption>
+</figure>
+</div>
+</section>
+<section id="legislative-district-results" class="level2">
+<h2 class="anchored" data-anchor-id="legislative-district-results">Legislative District Results</h2>
+<p>The statewide shift also altered legislative races across both chambers of the General Assembly:</p>
+<section id="nc-house-districts" class="level3">
+<h3 class="anchored" data-anchor-id="nc-house-districts">NC House Districts</h3>
+<p>Cooper carried an estimated 80 of the 120 NC House districts. The typical House district shifted <strong>16.3 points</strong> toward Democrats.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="election-night-2026/images/ncfree-election-2026-04-cooper-margin-nc-house-map.jpg" class="img-fluid figure-img"></p>
+<figcaption>Cooper Margin by NC House District</figcaption>
+</figure>
+</div>
+</section>
+<section id="nc-senate-districts" class="level3">
+<h3 class="anchored" data-anchor-id="nc-senate-districts">NC Senate Districts</h3>
+<p>Cooper carried an estimated 32 of the 50 NC Senate districts, with the typical Senate district shifting <strong>16.1 points</strong> toward Democrats.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="election-night-2026/images/ncfree-election-2026-05-cooper-margin-nc-senate-map.jpg" class="img-fluid figure-img"></p>
+<figcaption>Cooper Margin by NC Senate District</figcaption>
+</figure>
+</div>
+<hr>
+<p><em>For full breakdowns and all 13 graphics, see the <a href="./election-night-2026/article.html">Election Night Graphics</a> page.</em></p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -218,7 +274,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/JamesAllen554\.github\.io\/elections\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
